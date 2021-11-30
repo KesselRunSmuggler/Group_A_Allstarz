@@ -1,11 +1,19 @@
 # Group_A_Allstarz
-Repo for Project 2
+## ALLSTARZ INTRO
 
-Can we utilise ML to accurately predict entry and exits signals whilst trading, in order to make consistent profit?
+**Viseth Auk**
 
-pure SMA vs SMA & LSTM etc
+**Toby Martin**
 
-Compare buy and hold, MA trading and LSTM (close price)
+**Simon Zhang**
+
+**Luke Macumber**
+
+The Question is:  Can we utilise ML to accurately predict entry and exits signals whilst trading, in order to make a consistent profit?
+
+LSTM vs SMA vs Buy & HODL
+
+Compare and contrast buy & HODL, MA trading and LSTM (close price)
 
 # LSTM Model and Its Application in the Financial Markets 
 <div style="width:1280px">
@@ -39,7 +47,7 @@ Before we dive into it let's understand some terminologies commonly used in the 
 - **Optimiser** : Optimisation algorithm to use (defaults to Adam).
 - **Batch Size**: The number of data samples to use on each training iteration.
 - **Epoch**     : The number of times that the learning algorithm will pass through the entire training dataset
-
+- **HODL**     : Hold On For Dear Life
 
 # Data Exploration
 
@@ -55,7 +63,7 @@ possible to incorporate this model to profit from in our trading strategies. The
 
 <div style="width:1280px">
 
-We need to inspect and see what sort of data we have. we expect to see data with various patterns occurring overtime
+We need to inspect and see what sort of data we have we expect to see data with various patterns occurring overtime
 to ensure that the data can account for different changes in market behaviour over the period. This ensure consistency and trust 
 that the data have enough coverage for the forever changing market conditions.
 
@@ -65,6 +73,7 @@ that the data have enough coverage for the forever changing market conditions.
 The feature column we want to use to predict is the closing price.
 
 # Split the Data for Training Sets
+
 
 # Scale the Data
 We scale the data so it is uniform and comparable
