@@ -69,20 +69,67 @@ that the data have enough coverage for the forever changing market conditions.
 
 </div>
 
-# Define the Features
+
+# Our Moving Average Strategy ( **Customised** )
+
+<div style="width:1280px">
+
+Comparison 1: We will conduct a long only moving average strategy. Our strategy is as follows:
+
+- We will use the two-day rule only that is to say that we start the trade only after it is confirmed by one more day’s closing price, and keep the date as the entry point only if the 20 days MA is above 50 days MA two days in a row. **This approach will help us to avoid daily trading noise fluctuations**. When this happens, we will have the entry points in the column firstbuy where the value equals to True.<br/><br/>
+
+- At the buy entry we will purchase '50' units of the specified asset (bitcoin)<br/><br/>
+
+- We hold the position for 20 days and sell at the 20 days close price from the purchase date
+
+</div>
+
+# Moving Average Back Test Results
+<div style="width:1280px">
+To determine how well we performed in our moving average strategy, we can print out the long position profit list and calculate the sum.
+</div>
+
+![GATES](./images/MA_vs_cumprofit.png "LSTM GATES")
+
+# Buy & Hold Strategy
+<div style="width:1280px">
+To buy and hold simply means buy on the first day and sell on the last day. In this case, we will be buying 50 units of bitcoin and then selling 50 units at the close price of the last day on the timeseries.
+</div>
+
+### BUY & HOLD STRATEGY RETURN:
+===============================================
+
+Initial cost of purchasing 50 BTC: $5085.00
+
+Income from selling 50 BTC on the last day: $1687300.12
+
+profit = $1682215.12
+
+buy & hold return = 33081.91%
+
+===============================================
+
+# Steps Undertaken to build LSTM model:
+
+
+
+## Define the Features
 The feature column we want to use to predict is the closing price.
 
-# Split the Data for Training Sets
+## Split the Data for Training Sets
 
 
-# Scale the Data
+## Scale the Data
 We scale the data so it is uniform and comparable
 
-# Re-Shape the Data
+## Re-Shape the Data
 
-# Build the LSTM Model
+## Build the LSTM Model
 
-# Train the Data
+## Train the Data
 
-# Evaluate the model
+## Evaluate the model
+
+<br> The chart below compares the Actual vs Predicted Prices for the LSTM model:<br/>
+![GATES](./images/lstm_actual_vs_predicted.png "LSTM GATES")
 
