@@ -133,3 +133,4 @@ We scale the data so it is uniform and comparable
 <br> The chart below compares the Actual vs Predicted Prices for the LSTM model:<br/>
 ![GATES](./images/lstm_actual_vs_predicted.png "LSTM GATES")
 
+# Our Conclusion:
