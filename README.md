@@ -90,9 +90,9 @@ Comparison 1: We will conduct a long only moving average strategy. Our strategy 
 To determine how well we performed in our moving average strategy, we can print out the long position profit list and calculate the sum.
 
 
-![](./images/MA_vs_cumprofit.png)<br/>
+<br/>![](./images/MA_vs_CumProfit.png) <br/>
 
-![](./images/ma_results.png)<br/>
+<br/>![](./images/ma_results.png)<br/>
 
 # Buy & Hold Strategy
 <div style="width:1280px">
