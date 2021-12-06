@@ -123,17 +123,19 @@ buy if: (actual / predicted) < 1 – threshold (2%)<br/>
 close position if: (actual / predicted) > 1 + threshold (2%)
 
 ## Split the Data for Training Sets
-
+We used 70% of the data for training and the remainder for testing.
 
 ## Scale the Data
-We scale the data so it is uniform and comparable
+We scale the data so it is uniform and comparable.
 
 ## Re-Shape the Data
-
+Reshaped the features for the model.
 ## Build the LSTM Model
-
+After much testing we found using 64 units to be most accurate.
+We used 20% dropout portion to help prevent overfitting.
 ## Train the Data
-
+We trained the data using 10 epochs with a batch size of 32.<br/>
+![](./images/train_the_data.png)
 ## Evaluate the model
 
 <br> The chart below compares the Actual vs Predicted Prices for the LSTM model:<br/>
