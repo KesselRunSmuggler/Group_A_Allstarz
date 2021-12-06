@@ -81,15 +81,18 @@ Comparison 1: We will conduct a long only moving average strategy. Our strategy 
 - At the buy entry we will purchase '50' units of the specified asset (bitcoin)<br/><br/>
 
 - We hold the position for 20 days and sell at the 20 days close price from the purchase date
+<br/><br/>
 
-</div>
+
 
 # Moving Average Back Test Results
 <div style="width:1280px">
 To determine how well we performed in our moving average strategy, we can print out the long position profit list and calculate the sum.
-</div>
 
-![GATES](./images/MA_vs_cumprofit.png "LSTM GATES")
+
+![](./images/MA_vs_cumprofit.png)<br/>
+
+![](./images/ma_results.png)<br/>
 
 # Buy & Hold Strategy
 <div style="width:1280px">
@@ -114,7 +117,10 @@ buy & hold return = 33081.91%
 
 
 ## Define the Features
-The feature column we want to use to predict is the closing price.
+The feature column we want to use to predict is the closing price.<br/>
+Our LSTM trading strategy are as follows: <br/>
+buy if: (actual / predicted) < 1 – threshold (2%)<br/>
+close position if: (actual / predicted) > 1 + threshold (2%)
 
 ## Split the Data for Training Sets
 
@@ -131,6 +137,13 @@ We scale the data so it is uniform and comparable
 ## Evaluate the model
 
 <br> The chart below compares the Actual vs Predicted Prices for the LSTM model:<br/>
-![GATES](./images/lstm_actual_vs_predicted.png "LSTM GATES")
+![](./images/lstm_actual_vs_predicted.png)<br/>
+
+![](./images/lstm_results.png)
+
 
 # Our Conclusion:
+
+- Over the history of Bitcoin, the buy and hold strategy still wins out when compared to our MA strategy and the LSTM model.
+- LSTM is very difficult to configure to get the best results as it relies on so many parameters and we would need to understand and test each parameter thoroughly. Furthermore, there are still randomness in our results and we are unable to compare due to the fact the same parameters are not always reproduceable. This is because the LSTM model drops random data points as it is executed. 
+- With more time and honing of the parameters, we believe that it could be possible to out perform other investments using the LSTM model. However, when it comes to Bitcoin, the price appreciation year-on-year would be hard to beat.
