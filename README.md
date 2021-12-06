@@ -15,6 +15,29 @@ LSTM vs SMA vs Buy & HODL
 
 Compare and contrast buy & HODL, MA trading and LSTM (close price)
 
+# Libraries Used
+import numpy as np<br/>
+import pandas as pd<br/>
+import hvplot.pandas
+
+
+import matplotlib.pyplot as plt<br/>
+from matplotlib import pyplot<br/>
+from pylab import rcParams<br/>
+import time<br/>
+
+
+from sklearn.preprocessing import MinMaxScaler<br/>
+from subprocess import check_output<br/>
+from keras.layers.core import Dense, Activation, Dropout<br/>
+from keras.layers.recurrent import LSTM<br/>
+from keras.models import Sequential<br/>
+from sklearn.model_selection import train_test_split<br/>
+from tensorflow.keras.models import Sequential<br/>
+from tensorflow.keras.layers import LSTM, Dense, Dropout<br/>
+import tensorflow as tf<br/>
+tf.random.set_seed(245)
+
 # LSTM Model and Its Application in the Financial Markets 
 <div style="width:1280px">
 
